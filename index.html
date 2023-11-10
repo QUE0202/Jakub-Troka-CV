@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="themeStylesheet">
+    <title>Jakub Troka - Curriculum Vitae</title>
+</head>
+<body>
+
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+    </label>
+
+    <div class="sidebar">
+        <h1>Other Information</h1>
+        <ul>
+            <div class="cv-section-1">
+                <div class="cv-header-1">Personal Information</div>
+                <div class="cv-item-1"><strong>Email:</strong> jakub1016@gmail.com</div>
+                <div class="cv-item-1"><strong>Phone:</strong> +48 505-621-714</div>
+                <div class="cv-item-1"><strong>Address:</strong> Gdańsk Osowa, ul. Chełmińska 35</div>
+            </div>
+        </ul>
+        <ul>
+            <div class="cv-section-1">
+                <div class="cv-header-1">My Links</div>
+                <div class="cv-item-1"><a href="https://github.com/QUE0202"><strong>GitHub</strong></a></div>
+                <div class="cv-item-1"><a href="https://www.linkedin.com/in/jakub-troka-3904ab277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><strong>LinkedIn</strong></a></div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="personal" class="cv-section">
+            <center><div class="cv-header">Jakub Troka</div></center>
+        </div>
+
+        <div id="education" class="cv-section">
+            <div class="cv-header">Education</div>
+            <div class="cv-item">
+                <ul><li><strong>University WSB Merito Gdańsk:</strong> (2022 - now) Bezpieczeństwo Sieci Komputerowych</li></ul>
+            </div>
+            <div class="cv-item">
+                <ul><li><strong>Technikum TEB Edukacja Gdańsk:</strong> (2018 - 2022) Technik Informatyk</li></ul>
+            </div>
+        </div>
+
+        <div id="experience" class="cv-section">
+            <div class="cv-header">Work Experience</div>
+            <div class="cv-item">
+                <ul><li><strong>Help-Desk Assistant</strong> - ETOS S.A. (07.2022 - 09.2022)</li></ul>
+                <h3>Duties:</h3>
+                <ul>
+                    <li>Preparing the premises</li>
+                    <li>Computer Configuration</li>
+                    <li>Fixing problems reported by employees</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="skills" class="cv-section">
+            <div class="cv-header">Skills</div>
+            <ul>
+                <li>I learn quickly</li>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>MacOS</li>
+                <li>Web-Dev Languages</li>
+                <li>Learning Swift</li>
+                <li>Learning Python</li>
+                <li>Web Security</li>
+                <li>Information Technologies</li>
+                <li>Data Privacy</li>
+                <li>Software Development</li>
+                <li>Communication</li>
+                <li>Math</li>
+                <li>Technological Solutions</li>
+            </ul>
+        </div>
+
+        <div id="languages" class="cv-section">
+            <div class="cv-header">Languages</div>
+            <div class="cv-item">
+                <ul>
+                    <ul><li>Polish</li></ul>
+                    <ul><li>English</li></ul>
+                </ul>
+            </div>
+        </div>
+
+        <div id="interests" class="cv-section">
+            <div class="cv-header">Interests</div>
+            <div class="cv-item">
+                <ul>
+                    <ul><li>I'm interested in artificial intelligence</li></ul>
+                    <ul><li>I have experience in languages ​such as [C#, HTML, CSS, JS, Python, PHP, Swift, TypeScript, Java] that I use to create applications, websites and learning in my University.</li></ul>
+                    <ul><li>I am passionate about cars</li></ul>
+                    <ul><li>I love traveling and learning other cultures and languages</li></ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const themeStylesheet = document.getElementById('themeStylesheet');
+
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                themeStylesheet.href = 'dark-style.css';
+            } else {
+                themeStylesheet.href = 'style.css';
+            }
+        });
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            darkModeToggle.checked = true;
+            themeStylesheet.href = 'dark-style.css';
+        } else {
+            darkModeToggle.checked = false;
+            themeStylesheet.href = 'style.css';
+        }
+    </script>
+</body>
+</html>
